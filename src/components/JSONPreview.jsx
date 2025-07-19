@@ -17,7 +17,7 @@ const buildJSON = (fields) => {
 const JSONPreview = ({ fields }) => {
   const json = buildJSON(fields);
   return (
-    <Card title="📄 JSON Preview" size="small">
+    <Card title="📄 JSON Preview" style={{ width: 400 }}>
       <pre>{JSON.stringify(json, null, 2)}</pre>
     </Card>
   );

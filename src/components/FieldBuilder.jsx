@@ -15,7 +15,7 @@ const FieldBuilder = ({ fields, onChange }) => {
   };
 
   const handleAddField = () => {
-    onChange([...fields, { key: "", type: "string", children: [] }]);
+    onChange([...fields, { key: "", children: [] }]);
   };
 
   const handleRemoveField = (index) => {
@@ -43,8 +43,10 @@ const FieldBuilder = ({ fields, onChange }) => {
               <Select
                 value={field.type}
                 style={{ width: 120 }}
+                placeholder="Select Type"
                 onChange={(val) => handleFieldChange(index, "type", val)}
               >
+                
                 <Option value="string">String</Option>
                 <Option value="number">Number</Option>
                 <Option value="nested">Nested</Option>

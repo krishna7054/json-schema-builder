@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import FieldBuilder from "./components/FieldBuilder";
 import JSONPreview from "./components/JSONPreview";
-import { Layout, Typography } from "antd";
+import { Layout, Typography, Row, Col } from "antd";
 
 const { Header, Content } = Layout;
 const { Title } = Typography;
 
 function App() {
-  const [fields, setFields] = useState([]);
+  const [fields, setFields] = useState([
+    {
+      key: "",
+      children: [],
+    },
+  ]);
 
   return (
     <Layout style={{ minHeight: "100vh" }}>
@@ -17,11 +22,15 @@ function App() {
         </Title>
       </Header>
 
-      <Content style={{ padding: 24, maxWidth: 800, margin: "0 auto" }}>
-        <FieldBuilder fields={fields} onChange={setFields} />
-        <div style={{ marginTop: 24 }}>
-          <JSONPreview fields={fields} />
-        </div>
+      <Content style={{ padding: 24, maxWidth: 1200, margin: "auto" }}>
+        <Row gutter={[24, 24]}>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+            <FieldBuilder fields={fields} onChange={setFields} />
+          </Col>
+          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+            <JSONPreview fields={fields} />
+          </Col>
+        </Row>
       </Content>
     </Layout>
   );
