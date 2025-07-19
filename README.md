@@ -1,12 +1,57 @@
-# React + Vite
+# 🛠️ JSON Schema Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic and recursive JSON Schema Builder built with **ReactJS**, **Ant Design**, and **React Hook Form**. This tool allows users to build JSON schemas visually by adding, editing, and nesting fields — with live JSON preview.
 
-Currently, two official plugins are available:
+> ✨ Built as part of an assignment to demonstrate form building and dynamic state management in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Add/Edit/Delete fields dynamically
+- 🧩 Support for types: `string`, `number`, and `nested`
+- 🔁 Recursively nest fields for complex schema structures
+- 🔄 Real-time JSON preview panel
+- 📱 Fully responsive design using Ant Design Grid system
+
+---
+
+## 📸 Demo
+
+Try it live:  
+🌐 [Deployed Link (Vercel)](https://your-vercel-app.vercel.app)
+
+---
+
+## 📦 Tech Stack
+
+- **ReactJS**
+- **Ant Design**
+- **React Hook Form**
+- **Vite** (for fast bundling)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/krishna7054/json-schema-builder.git
+cd json-schema-builder
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Start development server
+```bash
+npm run dev
+```
+
+
+## 🧪 To-Do / Improvements
+-  Add validation for unique keys
+-  Export JSON as .json file
+- Support more data types (boolean, array, etc.)
+- Toggle collapsible nested sections
