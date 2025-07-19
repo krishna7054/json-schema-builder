@@ -19,7 +19,7 @@ A dynamic and recursive JSON Schema Builder built with **ReactJS**, **Ant Design
 ## 📸 Demo
 
 Try it live:  
-🌐 [Deployed Link (Vercel)](https://your-vercel-app.vercel.app)
+🌐 [Deployed Link (Vercel)](https://json-schema-builder-ruby.vercel.app/)
 
 ---
 
