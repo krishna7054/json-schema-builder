@@ -2,8 +2,6 @@
 
 A dynamic and recursive JSON Schema Builder built with **ReactJS**, **Ant Design**, and **React Hook Form**. This tool allows users to build JSON schemas visually by adding, editing, and nesting fields — with live JSON preview.
 
-> ✨ Built as part of an assignment to demonstrate form building and dynamic state management in React.
-
 ---
 
 ## ✨ Features
